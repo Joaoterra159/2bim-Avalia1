@@ -22,6 +22,6 @@ Framework preset: `None`. Build command: vazio. Build output directory: `public`
 
 ## Identificação (preencha após o fork)
 
-Nome: 
-RA: 
-URL: https://
+Nome: João Pedro Marques Terra
+RA: 2026108868
+URL: https://https://2bim-avalia1-njd.pages.dev
