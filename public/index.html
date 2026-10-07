@@ -17,24 +17,8 @@
       </p>
     </header>
 
-    <div id="login">
-      <div
-        id="g_id_onload"
-        data-client_id="884965635580-4nh4e4fc7rgvr8dpet82rt8mjo27ffgt.apps.googleusercontent.com"
-        data-callback="handleCredentialResponse"
-        data-auto_prompt="false">
-      </div>
-
-      <div
-        class="g_id_signin"
-        data-type="standard"
-        data-size="large"
-        data-theme="outline"
-        data-text="signin_with"
-        data-shape="rectangular"
-        data-logo_alignment="left">
-      </div>
-    </div>
+<div id="google-login"></div>
+    
 
     <form id="formulario" novalidate>
       <label for="numero">Número</label>
@@ -58,7 +42,7 @@
     <button id="baixar" type="button" hidden>Baixar SVG</button>
   </main>
 
-  <script type="module" src="script.js"></script>
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://accounts.google.com/gsi/client"></script>
+<script type="module" src="script.js"></script>
 </body>
 </html>
