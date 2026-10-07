@@ -11,12 +11,26 @@ const botaoBaixar = document.getElementById("baixar");
 let idToken = "";
 let svgAtual = "";
 
-// Callback chamado pelo Google Identity Services apos o login.
-window.handleCredentialResponse = (response) => {
-  idToken = response.credential;
+google.accounts.id.initialize({
+  client_id: "884965635580-4nh4e4fc7rgvr8dpet82rt8mjo27ffgt.apps.googleusercontent.com",
 
-  mensagem.textContent = "Login realizado com sucesso.";
-};
+  callback: (response) => {
+    idToken = response.credential;
+    mensagem.textContent = "Login realizado com sucesso.";
+  }
+});
+
+google.accounts.id.renderButton(
+  document.getElementById("google-login"),
+  {
+    theme: "outline",
+    size: "large",
+    type: "standard",
+    shape: "rectangular",
+    text: "signin_with",
+    logo_alignment: "left"
+  }
+);
 
 formulario.addEventListener("submit", async (evento) => {
   evento.preventDefault();
